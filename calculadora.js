@@ -1,7 +1,5 @@
 let personagemSelecionado; 
 let armaSelecionada; 
-let poderAtaque;
-let poderDefesa;
 
 function iniciar() { 
     const elementos = document.getElementsByClassName('elemento');
@@ -36,17 +34,8 @@ function retirarSelecao(evento) {
 
 function calcularDano(evento) {
     let botaoCalcular = evento.target;
-    if (armaSelecionada == "soco") {
-        poderAtaque = 40
-    }
 
-    else if (armaSelecionada == "arco") {
-        poderAtaque = 75
-    }
-
-    else {
-        poderAtaque = 90
-    }
+    poderAtaque = Math.floor(Math.random() * 100);
 
     if (personagemSelecionado == "orc") {
         poderDefesa = 80
@@ -60,12 +49,19 @@ function calcularDano(evento) {
         poderDefesa = 30
     }
 
+    var campoResposta = document.getElementById('resposta');
+    var resposta = document.createElement('h3');
+
     if (poderAtaque > poderDefesa) {
-        alert("Parabéns, você conseguiu derrota-lo!")
+        var texto = document.createTextNode("Dado: " + poderAtaque + "; Parabéns, você conseguiu derrota-lo!");
+        resposta.appendChild(texto);
+        campoResposta.appendChild(resposta);
     }
 
     else {
-        alert("Uma pena, não foi dessa vez, tente novamente")
+        var texto = document.createTextNode("Dado: " + poderAtaque + "; Uma pena, não foi dessa vez, tente novamente.");
+        resposta.appendChild(texto);
+        campoResposta.appendChild(resposta);
     }
 
 }
