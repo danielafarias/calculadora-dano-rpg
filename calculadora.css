@@ -1,0 +1,90 @@
+#botao {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border-color: blue;
+    border-width: 5px;
+}
+
+#bloco1 {
+    background-color: lightgrey;
+    border-radius: 15px;
+    border-color: black;
+    border: solid 1px;
+}
+
+#bloco2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px
+}
+
+#bloco3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bloco4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bloco5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bloco6 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bloco7 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+#orc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold;
+}
+
+#goblin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold;
+}
+
+#feiticeira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold;
+}
+
+#soco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold;
+}
+
+#arco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold;
+}
+
+#espada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold;
+}
